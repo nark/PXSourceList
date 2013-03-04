@@ -748,8 +748,11 @@ NSString * const PXSLDeleteKeyPressedOnRowsNotification = @"PXSourceListDeleteKe
 	return nil;
 }
 
-#pragma mark 10.7 only methods
 
+/* Remove 10.7 methods
+ 
+#pragma mark 10.7 only methods
+ 
 - (id <NSPasteboardWriting>)outlineView:(NSOutlineView *)outlineView pasteboardWriterForItem:(id)item
 {
     if ([_secondaryDataSource respondsToSelector:@selector(sourceList:pasteboardWriterForItem:)]) {
@@ -779,6 +782,8 @@ NSString * const PXSLDeleteKeyPressedOnRowsNotification = @"PXSourceListDeleteKe
         return [_secondaryDataSource sourceList:self updateDraggingItemsForDrag:draggingInfo];
     }
 }
+ 
+ */
 
 #pragma mark -
 #pragma mark NSOutlineView Delegate methods
